@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE-IAS IEM (Kolkata)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(90deg, #004085, #2a5faa);
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            width: 100px;
+        }
+
+        .header-title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #003366;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00509e;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #2a5faa;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        li strong {
+            font-weight: 600;
+            color: #004085;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #004085;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Photo Slider Styles */
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            animation: slideAnimation 15s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slideAnimation {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .logo-container {
+                flex-direction: column;
+            }
+
+            .header-title {
+                font-size: 18px;
+            }
+
+            .slider {
+                height: auto;
+            }
+
+            .slides {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="th (1).jpeg" alt="IEEE-IAS Logo">
+        </div>
+        <div class="header-title">
+            <h1>IEEE-IAS IEM (Kolkata)</h1>
+        </div>
+        <div class="logo-container">
+            <img src="ieee-ias logo.jpg" alt="IEM Logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#cwc">CWC Members</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#chairperson">Chairperson</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About IEEE-IAS IEM</h2>
+        <p>The IEEE Industry Applications Society (IAS) aims to advance the theory and practice of electrical and electronic engineering in the development, design, manufacture, and application of electrical systems, apparatus, devices, and controls.</p>
+        <p>At IEM, IEEE-IAS fosters a community for students to grow in technical knowledge, engage in impactful projects, and participate in global competitions and conferences.</p>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <div class="cards">
+            <div class="card">
+                <li><strong>Event 1:</strong> Hackathon on AI and ML – Date: Coming Soon</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="cwc">
+        <h2>CWC Members</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="sneha_di_profile pic .jpg"  alt="Chairperson Photo">
+                <li><strong>Chairperson:</strong> Sneha Das</li>
+            </div>
+            <div class="card">
+                <img src="avi da profile pic .jpg" alt="Vice-Chairperson Photo">
+                <li><strong>Vice-Chairperson:</strong> Avi Kundu</li>
+            </div>
+            <div class="card">
+                <img src="path/to/secretary-photo.jpeg" alt="Secretary Photo">
+                <li><strong> Secretary:</strong> Raja Das </li>
+            </div>
+            <div class="card">
+                <img src="arkadeep_da_profile pic.png" alt="Treasurer Photo">
+                <img src="asmit da profile pic.jpg">
+                <li><strong>Treasurer:</strong> Arkadeep Ghosh & Asmit Sil</li>
+            </div>
+            <div class="card">
+                <img src="himangshu.jpg" alt="Web Master Photo">
+                <li><strong>Web Master:</strong> Himangshu Singh</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>Photo Gallery</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="path/to/photo1.jpeg" alt="Photo 1">
+                <img src="path/to/photo2.jpeg" alt="Photo 2">
+                <img src="path/to/photo3.jpeg" alt="Photo 3">
+                <img src="path/to/photo4.jpeg" alt="Photo 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="Advisor, IEEE IAS SBC">
+        <h2>Advisor, IEEE IAS SBC</h2>
+        <div class="card" style="text-align: center;">
+            <!-- Chairperson's Photo -->
+            <img src="Sourav_sir.jpg" alt="Advisor, IEEE IAS SBC photo" style="width: 250px
+            px; border-radius: 60%; margin-bottom: 25px;">
+            
+            <!-- Chairperson's Info -->
+            <li><strong>Advisor, IEEE IAS SBC:</strong> Sourav Das</li>
+            <p>Sourav Das leads the IEEE-IAS IEM chapter with a vision to advance the mission of IEEE-IAS. Under his guidance, organizes impactful events, technical projects, and connects members with industry professionals.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us through the following contact details:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:ieeeias.iem@gmail.com">ieeeias.iem@gmail.com</a></li>
+            <li><strong>Phone:</strong> +91 12345 67890</li>
+            <li><strong>Follow Us on Social Media:</strong></li>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61565743400321&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/ieeeiasiemsbc/profilecard/?igsh=MTAyemZkejJmaXViZA==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/ieeeiasiem/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>© 2024 IEEE-IAS IEM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
